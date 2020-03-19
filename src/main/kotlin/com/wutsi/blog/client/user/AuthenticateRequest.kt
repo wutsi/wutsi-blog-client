@@ -9,5 +9,5 @@ data class AuthenticateRequest(
         val email: String? = null,
         val pictureUrl: String? = null,
         @get:NotNull val accessToken: String? = null,
-        @get:NotNull val refreshToken: String? = null
+        val refreshToken: String? = null
 )
