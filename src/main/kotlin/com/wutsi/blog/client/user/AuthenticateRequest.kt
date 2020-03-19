@@ -7,5 +7,7 @@ data class AuthenticateRequest(
         @get:NotNull val providerUserId: String? = null,
         @get:NotNull val fullName: String? = null,
         val email: String? = null,
-        val pictureUrl: String? = null
+        val pictureUrl: String? = null,
+        @get:NotNull val accessToken: String? = null,
+        @get:NotNull val refreshToken: String? = null
 )
