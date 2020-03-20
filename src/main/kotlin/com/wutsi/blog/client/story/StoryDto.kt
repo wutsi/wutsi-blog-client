@@ -12,8 +12,10 @@ data class StoryDto(
         val worldCount: Int = 0,
         val readingMinutes: Int = 0,
         val language: String? = null,
+        val content: String? = null,
+        val contentType: String? = null,
         val status: StoryStatus = StoryStatus.draft,
         val creationDateTime: Date = Date(),
-        var modificationDateTime: Date = Date(),
-        var publishedDateTime: Date? = null
+        val modificationDateTime: Date = Date(),
+        val publishedDateTime: Date? = null
 )
