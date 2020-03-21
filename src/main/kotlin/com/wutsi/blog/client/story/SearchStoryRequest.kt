@@ -4,5 +4,6 @@ data class SearchStoryRequest(
         val userId: Long? = null,
         val status: StoryStatus? = null,
         val limit: Int = 20,
-        val offset: Int = 0
+        val offset: Int = 0,
+        val sortBy: StorySortStrategy = StorySortStrategy.modified
 )
