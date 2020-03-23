@@ -3,7 +3,7 @@ package com.wutsi.blog.client.story
 import java.util.Date
 
 data class StoryDto(
-        val id: Long? = -1,
+        val id: Long = -1,
         val userId: Long = -1,
         val title: String? = null,
         val summary: String? = null,
@@ -17,5 +17,6 @@ data class StoryDto(
         val status: StoryStatus = StoryStatus.draft,
         val creationDateTime: Date = Date(),
         val modificationDateTime: Date = Date(),
-        val publishedDateTime: Date? = null
+        val publishedDateTime: Date? = null,
+        val tags: List<TagDto> = emptyList()
 )
