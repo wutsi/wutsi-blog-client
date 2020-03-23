@@ -15,5 +15,6 @@ data class StorySummaryDto(
         val status: StoryStatus = StoryStatus.draft,
         val creationDateTime: Date = Date(),
         val modificationDateTime: Date = Date(),
-        val publishedDateTime: Date? = null
+        val publishedDateTime: Date? = null,
+        val slug: String = ""
 )
