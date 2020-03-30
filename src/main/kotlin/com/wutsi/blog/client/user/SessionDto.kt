@@ -6,7 +6,7 @@ data class SessionDto(
         val accessToken: String = "",
         val refreshToken: String? = null,
         val accountId: Long = -1,
-        val user: UserDto = UserDto(),
+        val userId: Long = -1,
         val loginDateTime: Date = Date(),
         var logoutDateTime: Date? = null
 )

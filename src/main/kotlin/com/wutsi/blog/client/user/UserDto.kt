@@ -10,5 +10,6 @@ data class UserDto(
         var loginCount: Long = 0,
         val lastLoginDateTime: Date? = null,
         val creationDateTime: Date = Date(),
-        val modificationDateTime: Date = Date()
+        val modificationDateTime: Date = Date(),
+        val accounts: List<AccountDto> = emptyList()
 )
