@@ -4,7 +4,9 @@ import java.util.Date
 
 data class UserDto(
         val id: Long = -1,
+        val name: String = "",
         val fullName: String = "",
+        val biography: String? = null,
         val email: String? = null,
         var pictureUrl: String? = null,
         var loginCount: Long = 0,
