@@ -13,5 +13,6 @@ data class UserDto(
         val lastLoginDateTime: Date? = null,
         val creationDateTime: Date = Date(),
         val modificationDateTime: Date = Date(),
+        val websiteUrl: String? = null,
         val accounts: List<AccountDto> = emptyList()
 )
