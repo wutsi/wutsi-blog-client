@@ -6,9 +6,10 @@
 
     <groupId>com.wutsi</groupId>
     <artifactId>wutsi-blog-client</artifactId>
-    <version>1.5.0</version>
+    <version>1.6.0</version>
 
     <properties>
+        <wutsi-editorjs.version>1.4.0</wutsi-editorjs.version>
 
         <!-- Library versions - in ALPHABETICAL ORDER-->
         <javax.validation.version>2.0.1.Final</javax.validation.version>
@@ -18,6 +19,12 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>com.wutsi</groupId>
+            <artifactId>wutsi-editorjs</artifactId>
+            <version>${wutsi-editorjs.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
@@ -57,6 +64,13 @@
             <url>https://maven.pkg.github.com/wutsi/wutsi-blog-client</url>
         </repository>
     </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>github-wutsi-editorjs</id>
+            <url>https://maven.pkg.github.com/wutsi/wutsi-editorjs</url>
+        </repository>
+    </repositories>
 
 
     <build>
