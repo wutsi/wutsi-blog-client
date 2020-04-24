@@ -1,5 +1,5 @@
 package com.wutsi.blog.client.story
 
-data class ReadabilityResponseDto(
+data class GetStoryReadabilityResponse(
         val readability: ReadabilityDto = ReadabilityDto()
 )
