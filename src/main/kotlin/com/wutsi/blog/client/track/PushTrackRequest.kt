@@ -8,7 +8,6 @@ data class PushTrackRequest(
         val ip: String? = null,
         val lat: Double? = null,
         val long: Double? = null,
-
         val referer: String? = null,
         val page: String? = null,
         val event: String? = null,

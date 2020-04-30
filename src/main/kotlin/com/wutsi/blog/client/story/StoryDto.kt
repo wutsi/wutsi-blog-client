@@ -13,7 +13,7 @@ data class StoryDto(
         val wordCount: Int = 0,
         val readingMinutes: Int = 0,
         val language: String? = null,
-        val content: String? = null,
+        var content: String? = null,
         val contentType: String? = null,
         val status: StoryStatus = StoryStatus.draft,
         val creationDateTime: Date = Date(),
