@@ -16,5 +16,6 @@ data class StorySummaryDto(
         val creationDateTime: Date = Date(),
         val modificationDateTime: Date = Date(),
         val publishedDateTime: Date? = null,
-        val slug: String = ""
+        val slug: String = "",
+        val topicId: Long? = null
 )
