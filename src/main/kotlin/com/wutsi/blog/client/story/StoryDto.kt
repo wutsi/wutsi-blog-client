@@ -22,5 +22,7 @@ data class StoryDto(
         val tags: List<TagDto> = emptyList(),
         val slug: String = "",
         val readabilityScore: Int = 0,
-        val topic: TopicDto? = null
+        val topic: TopicDto? = null,
+        val live: Boolean = false,
+        val liveDateTime: Date? = null
 )
