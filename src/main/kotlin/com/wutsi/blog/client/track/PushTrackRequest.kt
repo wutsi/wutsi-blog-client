@@ -4,6 +4,7 @@ data class PushTrackRequest(
         val time: Long = System.currentTimeMillis(),
         val duid: String? = null,
         val uid: String? = null,
+        val hid: String? = null,
         val ua: String? = null,
         val ip: String? = null,
         val lat: Double? = null,
