@@ -12,6 +12,7 @@ data class SearchStoryRequest(
         val topicId: Long? = null,
         val publishedStartDate: Date? = null,
         val publishedEndDate: Date? = null,
+        val language: String? = null,
         val limit: Int = 20,
         val offset: Int = 0,
         val sortBy: StorySortStrategy = StorySortStrategy.modified,
