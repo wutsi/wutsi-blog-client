@@ -17,5 +17,5 @@ data class UserDto(
         val websiteUrl: String? = null,
         val accounts: List<AccountDto> = emptyList(),
         val superUser: Boolean = false,
-        val readAllLanguages: Boolean = false
+        val readAllLanguages: Boolean? = null
 )
