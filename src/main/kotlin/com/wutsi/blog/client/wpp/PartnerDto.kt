@@ -7,6 +7,7 @@ data class PartnerDto(
         val userId: Long = -1,
         val countryCode: String = "",
         val fullName: String = "",
+        val email: String = "",
         val mobileNumber: String = "",
         val mobileProvider: MobileProvider = MobileProvider.mtn,
         val creationDateTime: Date = Date(),
