@@ -5,5 +5,6 @@ enum class StatsType {
     shares,
     readers,
     signups,
-    read_time
+    read_time,
+    xreads
 }
