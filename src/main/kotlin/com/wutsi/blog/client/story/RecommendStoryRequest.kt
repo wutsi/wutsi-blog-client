@@ -1,4 +1,4 @@
-package com.wutsi.blog.client.recommendation
+package com.wutsi.blog.client.story
 
 import javax.validation.constraints.NotNull
 
