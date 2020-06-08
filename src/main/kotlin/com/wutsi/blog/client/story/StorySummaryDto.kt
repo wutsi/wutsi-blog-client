@@ -3,7 +3,7 @@ package com.wutsi.blog.client.story
 import java.util.Date
 
 data class StorySummaryDto(
-        val id: Long? = -1,
+        val id: Long = -1,
         val userId: Long = -1,
         val title: String? = null,
         val summary: String? = null,
