@@ -24,5 +24,8 @@ data class StoryDto(
         val readabilityScore: Int = 0,
         val topic: TopicDto? = null,
         val live: Boolean = false,
-        val liveDateTime: Date? = null
+        val liveDateTime: Date? = null,
+        val wppStatus: WPPStatus? = null,
+        val wppRejectionReason: String? = null,
+        val wppModificationDateTime: Date? = null
 )
