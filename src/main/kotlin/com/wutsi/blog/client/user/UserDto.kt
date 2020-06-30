@@ -15,7 +15,6 @@ data class UserDto(
         val creationDateTime: Date = Date(),
         val modificationDateTime: Date = Date(),
         val websiteUrl: String? = null,
-        val accounts: List<AccountDto> = emptyList(),
         val superUser: Boolean = false,
         val readAllLanguages: Boolean? = null,
         val facebookId: String? = null,
