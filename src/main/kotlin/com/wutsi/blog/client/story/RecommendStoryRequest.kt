@@ -7,5 +7,6 @@ data class RecommendStoryRequest(
         @get:NotNull val storyId: Long? = null,
         val userId: Long? = null,
         val language: String? = null,
+        val minViewers: Int? = null,
         val limit: Int = 20
 )
