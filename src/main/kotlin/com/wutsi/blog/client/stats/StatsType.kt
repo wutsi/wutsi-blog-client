@@ -6,5 +6,6 @@ enum class StatsType {
     readers,
     signups,
     read_time,
-    xreads
+    xreads,
+    wpp_read_ratio
 }
