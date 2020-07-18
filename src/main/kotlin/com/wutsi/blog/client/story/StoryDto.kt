@@ -6,6 +6,7 @@ data class StoryDto(
         val id: Long = -1,
         val userId: Long = -1,
         val title: String? = null,
+        val tagline: String? = null,
         val summary: String? = null,
         val thumbnailUrl: String? = null,
         val sourceUrl: String? = null,
