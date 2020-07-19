@@ -20,5 +20,6 @@ data class UserDto(
         val facebookId: String? = null,
         val twitterId: String? = null,
         val linkedinId: String? = null,
-        val youtubeId: String? = null
+        val youtubeId: String? = null,
+        val blog: Boolean = false
 )

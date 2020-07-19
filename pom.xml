@@ -6,7 +6,7 @@
 
     <groupId>com.wutsi</groupId>
     <artifactId>wutsi-blog-client</artifactId>
-    <version>1.55.0</version>
+    <version>1.56.0</version>
 
     <properties>
         <wutsi-editorjs.version>1.13.0</wutsi-editorjs.version>
