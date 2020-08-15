@@ -28,6 +28,5 @@ data class StoryDto(
         val liveDateTime: Date? = null,
         val wppStatus: WPPStatus? = null,
         val wppRejectionReason: String? = null,
-        val wppModificationDateTime: Date? = null,
-        val commentCount: Int = 0
+        val wppModificationDateTime: Date? = null
 )
