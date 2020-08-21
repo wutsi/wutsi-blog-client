@@ -3,8 +3,8 @@ package com.wutsi.blog.client.event
 import java.util.Date
 
 data class ViewEvent (
-        val userId: Long?,
-        val storyId: Long,
-        val deviceId: String?,
-        val eventDateTime: Date
+        val userId: Long? = null,
+        val storyId: Long = -1,
+        val deviceId: String? = null,
+        val eventDateTime: Date = Date()
 )
