@@ -6,5 +6,6 @@ data class ViewEvent (
         val userId: Long? = null,
         val storyId: Long = -1,
         val deviceId: String? = null,
+        var hitId: String = "",
         val eventDateTime: Date = Date()
 )
