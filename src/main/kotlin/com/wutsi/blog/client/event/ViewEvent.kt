@@ -7,5 +7,8 @@ data class ViewEvent (
         val storyId: Long = -1,
         val deviceId: String? = null,
         var hitId: String = "",
+        val source: String? = null,
+        val campaign: String? = null,
+        val medium: String? = null,
         val eventDateTime: Date = Date()
 )

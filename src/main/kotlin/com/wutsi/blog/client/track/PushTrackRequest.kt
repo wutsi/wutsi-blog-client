@@ -13,5 +13,6 @@ data class PushTrackRequest(
         val page: String? = null,
         val event: String? = null,
         val pid: String? = null,
-        val value: String? = null
+        val value: String? = null,
+        val url: String? = null
 )

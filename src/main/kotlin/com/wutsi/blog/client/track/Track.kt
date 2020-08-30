@@ -21,5 +21,10 @@ data class Track(
         var device: Device = Device(),
         var bot: Boolean = false,
         var trafficType: TrafficType = TrafficType.unknown,
-        var hitId: String? = null
+        var hitId: String? = null,
+
+        var url: String? = null,
+        var source: String? = null,
+        var campaign: String? = null,
+        var medium: String? = null
 )
