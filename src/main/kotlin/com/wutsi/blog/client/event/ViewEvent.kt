@@ -10,5 +10,6 @@ data class ViewEvent (
         val source: String? = null,
         val campaign: String? = null,
         val medium: String? = null,
+        val referer: String? = null,
         val eventDateTime: Date = Date()
 )
