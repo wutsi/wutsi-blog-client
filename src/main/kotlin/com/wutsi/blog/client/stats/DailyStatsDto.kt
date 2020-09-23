@@ -1,9 +1,10 @@
 package com.wutsi.blog.client.stats
 
-data class StatsUserDto(
+import java.util.Date
+
+data class DailyStatsDto(
         val type: StatsType = StatsType.viewers,
-        val userId: Long = -1,
-        val year: Int = 0,
-        val month: Int = 0,
+        val targetId: Long = -1,
+        val date: Date = Date(),
         val value: Long = 0
 )
