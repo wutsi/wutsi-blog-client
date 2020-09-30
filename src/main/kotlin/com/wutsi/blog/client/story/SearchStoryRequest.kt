@@ -7,6 +7,7 @@ import java.util.Date
 data class SearchStoryRequest(
         val storyIds: List<Long> = emptyList(),
         val userId: Long? = null,
+        val userIds: List<Long> = emptyList(),
         val status: StoryStatus? = null,
         val live: Boolean? = null,
         val topicId: Long? = null,
