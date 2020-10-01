@@ -4,7 +4,7 @@ import javax.validation.constraints.NotNull
 
 data class SearchMonthlyStatsStoryRequest(
         @get:NotNull val year: Int? = null,
-        @get:NotNull val month: Int? = null,
+        val month: Int? = null,
         val userId: Long? = null,
         val storyIds: List<Long> = emptyList(),
         val type: StatsType? = null
