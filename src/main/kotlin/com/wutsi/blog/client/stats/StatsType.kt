@@ -9,5 +9,7 @@ enum class StatsType {
     xreads,
     read_ratio,
     wpp_read_ratio,
-    wpp_earning
+    wpp_earning,
+    likes,
+    comments
 }
