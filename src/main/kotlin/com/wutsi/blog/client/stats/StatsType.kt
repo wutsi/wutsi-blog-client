@@ -11,5 +11,6 @@ enum class StatsType {
     wpp_read_ratio,
     wpp_earning,
     likes,
-    comments
+    comments,
+    hits
 }
