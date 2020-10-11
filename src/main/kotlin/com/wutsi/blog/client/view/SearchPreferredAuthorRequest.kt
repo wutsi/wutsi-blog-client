@@ -5,6 +5,5 @@ import org.jetbrains.annotations.NotNull
 
 data class SearchPreferredAuthorRequest(
         val userId: Long? = null,
-        val deviceId: String? = null,
-        val limit: Int = 10
+        val deviceId: String? = null
 )
