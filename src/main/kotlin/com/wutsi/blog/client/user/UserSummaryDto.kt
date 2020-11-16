@@ -7,7 +7,8 @@ data class UserSummaryDto(
         val name: String = "",
         val blog: Boolean = false,
         val fullName: String = "",
-        var pictureUrl: String? = null,
+        val pictureUrl: String? = null,
+        val biography: String? = null,
         val creationDateTime: Date = Date(),
         val modificationDateTime: Date = Date()
 )
