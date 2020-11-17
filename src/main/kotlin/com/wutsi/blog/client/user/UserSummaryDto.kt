@@ -10,5 +10,7 @@ data class UserSummaryDto(
         val pictureUrl: String? = null,
         val biography: String? = null,
         val creationDateTime: Date = Date(),
-        val modificationDateTime: Date = Date()
+        val modificationDateTime: Date = Date(),
+        val storyCount: Long = 0L,
+        val followerCount: Long = 0L
 )

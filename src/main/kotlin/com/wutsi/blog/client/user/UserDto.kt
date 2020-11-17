@@ -21,5 +21,7 @@ data class UserDto(
         val twitterId: String? = null,
         val linkedinId: String? = null,
         val youtubeId: String? = null,
-        val blog: Boolean = false
+        val blog: Boolean = false,
+        val storyCount: Long = 0L,
+        val followerCount: Long = 0L
 )
