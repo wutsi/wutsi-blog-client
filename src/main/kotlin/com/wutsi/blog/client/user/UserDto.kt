@@ -23,5 +23,6 @@ data class UserDto(
         val youtubeId: String? = null,
         val blog: Boolean = false,
         val storyCount: Long = 0L,
-        val followerCount: Long = 0L
+        val followerCount: Long = 0L,
+        val newsletterDeliveryDayOfWeek: Int = -1
 )
