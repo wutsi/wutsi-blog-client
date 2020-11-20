@@ -6,8 +6,8 @@ data class SearchUserRequest(
         val userIds: List<Long> = emptyList(),
         val limit: Int = 20,
         val offset: Int = 0,
-        val blog: Boolean = false,
         val sortBy: UserSortStrategy = UserSortStrategy.created,
         val sortOrder: SortOrder = SortOrder.ascending,
-        val autoFollowedByBlogs: Boolean = false
+        val blog: Boolean? = null,
+        val autoFollowedByBlogs: Boolean? = null
 )
