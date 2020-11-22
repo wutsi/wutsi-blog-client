@@ -5,5 +5,5 @@ import javax.validation.constraints.NotNull
 
 data class UpdateUserAttributeRequest(
         @get:NotNull @get:NotEmpty val name: String? = null,
-        @get:NotNull @get:NotEmpty val value: String? = null
+        val value: String? = null
 )
