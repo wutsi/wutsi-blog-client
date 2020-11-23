@@ -9,5 +9,6 @@ data class PublishStoryRequest(
         @get:NotBlank val summary: String = "",
         val tagline: String? = null,
         @get:NotNull val topidId: Long? = null,
-        @get:NotEmpty val tags: List<String> = emptyList()
+        @get:NotEmpty val tags: List<String> = emptyList(),
+        val socialMediaMessage: String? = null
 )
