@@ -1,5 +1,6 @@
 package com.wutsi.blog.client.mail
 
 data class UnsubscribeMailResponse(
-        val email: String = ""
+        val userId: Long? = null,
+        val subscriberEmail: String = ""
 )

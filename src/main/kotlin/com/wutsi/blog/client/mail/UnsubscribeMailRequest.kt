@@ -3,5 +3,6 @@ package com.wutsi.blog.client.mail
 import javax.validation.constraints.NotBlank
 
 data class UnsubscribeMailRequest(
-        @get:NotBlank val email: String = ""
+        val userId: Long? = null,
+        @get:NotBlank val subscriberEmail: String = ""
 )
