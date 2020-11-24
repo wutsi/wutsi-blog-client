@@ -8,6 +8,7 @@ data class CreateChannelRequest(
         @get:NotBlank var name: String = "",
         @get:NotBlank val accessToken: String = "",
         @get:NotBlank val accessTokenSecret: String = "",
+        @get:NotBlank val providerUserId: String = "",
 
         val type: ChannelType = ChannelType.unknown,
         val pictureUrl: String? = null

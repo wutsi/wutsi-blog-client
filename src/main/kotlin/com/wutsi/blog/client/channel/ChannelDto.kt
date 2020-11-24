@@ -4,6 +4,7 @@ import java.util.Date
 
 data class ChannelDto(
         val id: Long = -1,
+        val providerUserId: String = "",
         val userId: Long? = null,
         val type: ChannelType = ChannelType.unknown,
         val name: String = "",
