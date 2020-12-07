@@ -1,5 +1,6 @@
 package com.wutsi.blog.sdk
 
+import com.wutsi.blog.sdk.impl.ChannelApiImpl
 import com.wutsi.blog.sdk.impl.NewsletterApiImpl
 import com.wutsi.blog.sdk.impl.PinApiImpl
 import com.wutsi.blog.sdk.impl.TagApiImpl
@@ -10,6 +11,9 @@ class Sdk(
         private val http: Http,
         private val environment: WutsiEnvironment
 ){
+    fun channelApi(): ChannelApi =
+            ChannelApiImpl(http, environment)
+
     fun newsletterApi(): NewsletterApi =
             NewsletterApiImpl(http, environment)
 
