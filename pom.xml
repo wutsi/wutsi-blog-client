@@ -6,16 +6,18 @@
 
     <groupId>com.wutsi</groupId>
     <artifactId>wutsi-blog-client</artifactId>
-    <version>1.112.0</version>
+    <version>1.113.0</version>
 
     <properties>
         <wutsi-editorjs.version>1.16.0</wutsi-editorjs.version>
+        <wutsi-core.version>1.21.0</wutsi-core.version>
 
         <!-- Library versions - in ALPHABETICAL ORDER-->
         <javax.validation.version>2.0.1.Final</javax.validation.version>
         <junit.version>4.13.1</junit.version>
         <kotlin.version>1.2.41</kotlin.version>
         <slf4j.version>1.7.29</slf4j.version>
+        <spring.version>5.1.11.RELEASE</spring.version>
     </properties>
 
     <dependencies>
@@ -24,11 +26,22 @@
             <artifactId>wutsi-editorjs</artifactId>
             <version>${wutsi-editorjs.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.wutsi</groupId>
+            <artifactId>wutsi-core</artifactId>
+            <version>${wutsi-core.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
             <version>${javax.validation.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
