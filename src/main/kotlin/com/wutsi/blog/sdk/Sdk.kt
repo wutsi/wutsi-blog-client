@@ -1,6 +1,8 @@
 package com.wutsi.blog.sdk
 
 import com.wutsi.blog.sdk.impl.PinApiImpl
+import com.wutsi.blog.sdk.impl.TagApiImpl
+import com.wutsi.blog.sdk.impl.TopicApiImpl
 import com.wutsi.core.http.Http
 
 class Sdk(
@@ -9,5 +11,11 @@ class Sdk(
 ){
     fun pinApi (): PinApi =
             PinApiImpl(http, environment)
+
+    fun tagApi (): TagApi =
+            TagApiImpl(http, environment)
+
+    fun topicApi (): TopicApi =
+            TopicApiImpl(http, environment)
 }
 
