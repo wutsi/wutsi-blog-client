@@ -1,5 +1,5 @@
 package com.wutsi.blog.client.comment
 
 data class CountCommentResponse(
-        val counts: List<CommentCountDto> = emptyList()
+    val counts: List<CommentCountDto> = emptyList()
 )

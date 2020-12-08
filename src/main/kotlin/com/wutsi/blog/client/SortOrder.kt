@@ -1,6 +1,6 @@
 package com.wutsi.blog.client
 
-enum class SortOrder{
+enum class SortOrder {
     ascending,
     descending
 }

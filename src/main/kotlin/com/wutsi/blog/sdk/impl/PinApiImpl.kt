@@ -8,9 +8,9 @@ import com.wutsi.blog.sdk.WutsiEnvironment
 import com.wutsi.core.http.Http
 
 internal class PinApiImpl(
-        private val http: Http,
-        private val environment: WutsiEnvironment
-): PinApi {
+    private val http: Http,
+    private val environment: WutsiEnvironment
+) : PinApi {
     override fun get(userId: Long): GetPinResponse {
         return return http.get(uri(userId), GetPinResponse::class.java).body!!
     }
@@ -22,5 +22,5 @@ internal class PinApiImpl(
         http.delete(uri(userId))
 
     private fun uri(userId: Long): String =
-        "${environment.apiUrl}/v1/users/${userId}/pin"
+        "${environment.apiUrl}/v1/users/$userId/pin"
 }

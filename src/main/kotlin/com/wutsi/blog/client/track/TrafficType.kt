@@ -1,6 +1,6 @@
 package com.wutsi.blog.client.track
 
-enum class TrafficType{
+enum class TrafficType {
     direct,
     seo,
     social_media,

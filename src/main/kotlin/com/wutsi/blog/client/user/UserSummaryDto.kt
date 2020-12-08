@@ -3,14 +3,14 @@ package com.wutsi.blog.client.user
 import java.util.Date
 
 data class UserSummaryDto(
-        val id: Long = -1,
-        val name: String = "",
-        val blog: Boolean = false,
-        val fullName: String = "",
-        val pictureUrl: String? = null,
-        val biography: String? = null,
-        val creationDateTime: Date = Date(),
-        val modificationDateTime: Date = Date(),
-        val storyCount: Long = 0L,
-        val followerCount: Long = 0L
+    val id: Long = -1,
+    val name: String = "",
+    val blog: Boolean = false,
+    val fullName: String = "",
+    val pictureUrl: String? = null,
+    val biography: String? = null,
+    val creationDateTime: Date = Date(),
+    val modificationDateTime: Date = Date(),
+    val storyCount: Long = 0L,
+    val followerCount: Long = 0L
 )

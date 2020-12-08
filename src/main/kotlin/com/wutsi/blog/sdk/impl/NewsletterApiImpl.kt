@@ -6,9 +6,9 @@ import com.wutsi.core.http.Http
 import java.net.URLEncoder
 
 internal class NewsletterApiImpl(
-        private val http: Http,
-        private val environment: WutsiEnvironment
-): NewsletterApi {
+    private val http: Http,
+    private val environment: WutsiEnvironment
+) : NewsletterApi {
     override fun unsubscribe(email: String) {
         unsubscribe(uri(), email)
     }

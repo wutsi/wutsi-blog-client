@@ -6,7 +6,7 @@
 
     <groupId>com.wutsi</groupId>
     <artifactId>wutsi-blog-client</artifactId>
-    <version>1.118.0</version>
+    <version>1.118.1</version>
 
     <properties>
         <wutsi-editorjs.version>1.16.0</wutsi-editorjs.version>
@@ -15,6 +15,7 @@
         <!-- Library versions - in ALPHABETICAL ORDER-->
         <javax.validation.version>2.0.1.Final</javax.validation.version>
         <junit.version>4.13.1</junit.version>
+        <klint.version>0.40.0</klint.version>
         <kotlin.version>1.2.41</kotlin.version>
         <slf4j.version>1.7.29</slf4j.version>
         <spring.version>5.1.11.RELEASE</spring.version>
@@ -143,6 +144,51 @@
                 </dependencies>
             </plugin>
 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <execution>
+                        <id>ktlint</id>
+                        <phase>verify</phase>
+                        <configuration>
+                            <target name="ktlint">
+                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true" classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
+                                    <arg value="src/**/*.kt"/>
+                                    <!-- to generate report in checkstyle format prepend following args: -->
+                                    <arg value="--reporter=plain"/>
+                                    <arg value="--reporter=checkstyle,output=${project.build.directory}/ktlint.xml"/>
+
+                                    <!-- see https://github.com/pinterest/ktlint#usage for more -->
+                                </java>
+                            </target>
+                        </configuration>
+                        <goals><goal>run</goal></goals>
+                    </execution>
+                    <execution>
+                        <id>ktlint-format</id>
+                        <configuration>
+                            <target name="ktlint">
+                                <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true"
+                                      classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
+                                    <arg value="-F"/>
+                                    <arg value="src/**/*.kt"/>
+                                </java>
+                            </target>
+                        </configuration>
+                        <goals><goal>run</goal></goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.pinterest</groupId>
+                        <artifactId>ktlint</artifactId>
+                        <version>${klint.version}</version>
+                    </dependency>
+                    <!-- additional 3rd party ruleset(s) can be specified here -->
+                </dependencies>
+            </plugin>
         </plugins>
     </build>
 

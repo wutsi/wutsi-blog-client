@@ -6,9 +6,9 @@ import com.wutsi.blog.sdk.WutsiEnvironment
 import com.wutsi.core.http.Http
 
 internal class TopicApiImpl(
-        private val http: Http,
-        private val environment: WutsiEnvironment
-): TopicApi {
+    private val http: Http,
+    private val environment: WutsiEnvironment
+) : TopicApi {
     override fun all(): SearchTopicResponse =
         http.get(uri(), SearchTopicResponse::class.java).body!!
 
