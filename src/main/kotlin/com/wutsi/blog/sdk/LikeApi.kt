@@ -1,14 +1,14 @@
 package com.wutsi.blog.sdk
 
-import com.wutsi.blog.client.follower.CountFollowerResponse
-import com.wutsi.blog.client.follower.CreateFollowerRequest
-import com.wutsi.blog.client.follower.CreateFollowerResponse
-import com.wutsi.blog.client.follower.SearchFollowerRequest
-import com.wutsi.blog.client.follower.SearchFollowerResponse
+import com.wutsi.blog.client.like.CountLikeResponse
+import com.wutsi.blog.client.like.CreateLikeRequest
+import com.wutsi.blog.client.like.CreateLikeResponse
+import com.wutsi.blog.client.like.SearchLikeRequest
+import com.wutsi.blog.client.like.SearchLikeResponse
 
-interface FollowerApi {
-    fun create(request: CreateFollowerRequest): CreateFollowerResponse
-    fun search(request: SearchFollowerRequest): SearchFollowerResponse
-    fun count(request: SearchFollowerRequest): CountFollowerResponse
+interface LikeApi {
+    fun create(request: CreateLikeRequest): CreateLikeResponse
+    fun search(request: SearchLikeRequest): SearchLikeResponse
+    fun count(request: SearchLikeRequest): CountLikeResponse
     fun delete(id: Long)
 }
