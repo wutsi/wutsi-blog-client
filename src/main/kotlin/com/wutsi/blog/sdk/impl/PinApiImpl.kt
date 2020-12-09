@@ -11,9 +11,8 @@ internal class PinApiImpl(
     private val http: Http,
     private val environment: WutsiEnvironment
 ) : PinApi {
-    override fun get(userId: Long): GetPinResponse {
-        return return http.get(uri(userId), GetPinResponse::class.java).body!!
-    }
+    override fun get(userId: Long): GetPinResponse =
+        http.get(uri(userId), GetPinResponse::class.java).body!!
 
     override fun create(userId: Long, request: CreatePinRequest): CreatePinResponse =
         http.post(uri(userId), request, CreatePinResponse::class.java).body!!
