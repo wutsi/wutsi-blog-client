@@ -5,6 +5,7 @@ import com.wutsi.blog.sdk.impl.ContractApiImpl
 import com.wutsi.blog.sdk.impl.FollowerApiImpl
 import com.wutsi.blog.sdk.impl.LikeApiImpl
 import com.wutsi.blog.sdk.impl.NewsletterApiImpl
+import com.wutsi.blog.sdk.impl.PartnerApiImpl
 import com.wutsi.blog.sdk.impl.PinApiImpl
 import com.wutsi.blog.sdk.impl.ShareApiImpl
 import com.wutsi.blog.sdk.impl.TagApiImpl
@@ -24,6 +25,8 @@ class Sdk(
     fun likeApi(): LikeApi = LikeApiImpl(http, environment)
 
     fun newsletterApi(): NewsletterApi = NewsletterApiImpl(http, environment)
+
+    fun partnerApi(): PartnerApi = PartnerApiImpl(http, environment)
 
     fun pinApi(): PinApi = PinApiImpl(http, environment)
 

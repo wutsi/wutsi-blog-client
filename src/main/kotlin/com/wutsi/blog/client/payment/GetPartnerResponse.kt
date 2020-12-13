@@ -1,4 +1,4 @@
-package com.wutsi.blog.client.wpp
+package com.wutsi.blog.client.payment
 
 data class GetPartnerResponse(
     val partner: PartnerDto = PartnerDto()

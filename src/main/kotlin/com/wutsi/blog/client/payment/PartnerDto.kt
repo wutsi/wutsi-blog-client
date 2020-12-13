@@ -1,5 +1,6 @@
-package com.wutsi.blog.client.wpp
+package com.wutsi.blog.client.payment
 
+import com.wutsi.blog.client.payment.MobileProvider.mtn
 import java.util.Date
 
 data class PartnerDto(
@@ -9,7 +10,7 @@ data class PartnerDto(
     val fullName: String = "",
     val email: String = "",
     val mobileNumber: String = "",
-    val mobileProvider: MobileProvider = MobileProvider.mtn,
+    val mobileProvider: MobileProvider = mtn,
     val creationDateTime: Date = Date(),
     val modificationDateTime: Date = Date()
 )

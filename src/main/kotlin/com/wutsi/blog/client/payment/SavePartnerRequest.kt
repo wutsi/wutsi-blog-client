@@ -1,4 +1,4 @@
-package com.wutsi.blog.client.wpp
+package com.wutsi.blog.client.payment
 
 import javax.validation.constraints.Email
 import javax.validation.constraints.NotBlank
