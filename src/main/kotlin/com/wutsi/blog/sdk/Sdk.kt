@@ -1,6 +1,7 @@
 package com.wutsi.blog.sdk
 
 import com.wutsi.blog.sdk.impl.ChannelApiImpl
+import com.wutsi.blog.sdk.impl.CommentApiImpl
 import com.wutsi.blog.sdk.impl.ContractApiImpl
 import com.wutsi.blog.sdk.impl.FollowerApiImpl
 import com.wutsi.blog.sdk.impl.LikeApiImpl
@@ -17,6 +18,8 @@ class Sdk(
     private val environment: WutsiEnvironment
 ) {
     fun channelApi(): ChannelApi = ChannelApiImpl(http, environment)
+
+    fun commentApi(): CommentApi = CommentApiImpl(http, environment)
 
     fun contractApi(): ContractApi = ContractApiImpl(http, environment)
 
