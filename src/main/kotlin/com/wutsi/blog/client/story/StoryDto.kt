@@ -29,5 +29,6 @@ data class StoryDto(
     val wppStatus: WPPStatus? = null,
     val wppRejectionReason: String? = null,
     val wppModificationDateTime: Date? = null,
-    val socialMediaMessage: String? = null
+    val socialMediaMessage: String? = null,
+    val scheduledPublishDateTime: Date? = null
 )
