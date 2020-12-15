@@ -11,6 +11,7 @@ import com.wutsi.blog.sdk.impl.PinApiImpl
 import com.wutsi.blog.sdk.impl.ShareApiImpl
 import com.wutsi.blog.sdk.impl.TagApiImpl
 import com.wutsi.blog.sdk.impl.TopicApiImpl
+import com.wutsi.blog.sdk.impl.UserApiImpl
 import com.wutsi.core.http.Http
 
 class Sdk(
@@ -38,4 +39,6 @@ class Sdk(
     fun tagApi(): TagApi = TagApiImpl(http, environment)
 
     fun topicApi(): TopicApi = TopicApiImpl(http, environment)
+
+    fun userApi(): UserApi = UserApiImpl(http, environment)
 }
