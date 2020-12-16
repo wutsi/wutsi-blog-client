@@ -15,10 +15,10 @@ internal class UserApiImpl(
     private val environment: WutsiEnvironment
 ) : UserApi {
     override fun get(userId: Long): GetUserResponse =
-        http.get("/$userId", GetUserResponse::class.java).body
+        http.get(uri("/$userId"), GetUserResponse::class.java).body
 
     override fun get(username: String): GetUserResponse =
-        http.get("/@/$username", GetUserResponse::class.java).body
+        http.get(uri("/@/$username"), GetUserResponse::class.java).body
 
     override fun set(userId: Long, request: UpdateUserAttributeRequest): UpdateUserAttributeResponse =
         http.post(uri("/$userId"), request, UpdateUserAttributeResponse::class.java).body
