@@ -12,6 +12,7 @@ data class PublishStoryRequest(
     @get:NotNull val topidId: Long? = null,
     @get:NotEmpty val tags: List<String> = emptyList(),
     val tagline: String? = null,
+    val publishToSocialMedia: Boolean? = null,
     val socialMediaMessage: String? = null,
     @get:Future val scheduledPublishDateTime: Date? = null
 )

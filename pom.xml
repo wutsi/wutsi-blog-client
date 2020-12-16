@@ -6,7 +6,7 @@
 
     <groupId>com.wutsi</groupId>
     <artifactId>wutsi-blog-client</artifactId>
-    <version>1.125.0</version>
+    <version>1.126.0</version>
 
     <properties>
         <wutsi-editorjs.version>1.16.0</wutsi-editorjs.version>
@@ -151,7 +151,7 @@
                 <executions>
                     <execution>
                         <id>ktlint</id>
-                        <phase>verify</phase>
+                        <phase>validate</phase>
                         <configuration>
                             <target name="ktlint">
                                 <java taskname="ktlint" dir="${basedir}" fork="true" failonerror="true" classname="com.pinterest.ktlint.Main" classpathref="maven.plugin.classpath">
