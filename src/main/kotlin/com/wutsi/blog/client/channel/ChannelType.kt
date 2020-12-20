@@ -4,5 +4,6 @@ enum class ChannelType {
     unknown,
     facebook,
     twitter,
-    linkedin
+    linkedin,
+    firebase
 }
