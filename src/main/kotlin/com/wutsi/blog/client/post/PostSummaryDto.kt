@@ -8,6 +8,8 @@ import java.util.Date
 data class PostSummaryDto(
     val id: Long = -1,
     val storyId: Long = -1,
+    val pictureUrl: String? = null,
+    val message: String? = null,
     val channelType: ChannelType = unknown,
     val status: PostStatus = pending,
     val scheduledPostDateTime: Date = Date(),

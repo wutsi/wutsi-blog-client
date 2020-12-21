@@ -21,7 +21,7 @@ internal class UserApiImpl(
         http.get(uri("/@/$username"), GetUserResponse::class.java).body
 
     override fun set(userId: Long, request: UpdateUserAttributeRequest): UpdateUserAttributeResponse =
-        http.post(uri("/$userId"), request, UpdateUserAttributeResponse::class.java).body
+        http.post(uri("/$userId/attributes"), request, UpdateUserAttributeResponse::class.java).body
 
     override fun search(request: SearchUserRequest): SearchUserResponse {
         val url = uri() + "?" + params(request, true)
