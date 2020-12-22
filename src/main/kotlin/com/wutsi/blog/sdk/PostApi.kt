@@ -5,6 +5,8 @@ import com.wutsi.blog.client.post.CreatePostResponse
 import com.wutsi.blog.client.post.GetPostResponse
 import com.wutsi.blog.client.post.SearchPostRequest
 import com.wutsi.blog.client.post.SearchPostResponse
+import com.wutsi.blog.client.post.SetPostPictureRequest
+import com.wutsi.blog.client.post.SetPostPictureResponse
 import com.wutsi.blog.client.post.UpdatePostRequest
 import com.wutsi.blog.client.post.UpdatePostResponse
 
@@ -14,4 +16,6 @@ interface PostApi {
     fun get(postId: Long): GetPostResponse
     fun search(request: SearchPostRequest): SearchPostResponse
     fun delete(postId: Long)
+    fun setPicture(postId: Long, request: SetPostPictureRequest): SetPostPictureResponse
+    fun resetPicture(postId: Long)
 }

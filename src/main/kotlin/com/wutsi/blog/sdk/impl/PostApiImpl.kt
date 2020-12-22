@@ -5,6 +5,8 @@ import com.wutsi.blog.client.post.CreatePostResponse
 import com.wutsi.blog.client.post.GetPostResponse
 import com.wutsi.blog.client.post.SearchPostRequest
 import com.wutsi.blog.client.post.SearchPostResponse
+import com.wutsi.blog.client.post.SetPostPictureRequest
+import com.wutsi.blog.client.post.SetPostPictureResponse
 import com.wutsi.blog.client.post.UpdatePostRequest
 import com.wutsi.blog.client.post.UpdatePostResponse
 import com.wutsi.blog.sdk.PostApi
@@ -30,8 +32,15 @@ internal class PostApiImpl(
         return http.get(url, SearchPostResponse::class.java).body
     }
 
-    override fun delete(id: Long) =
-        http.delete(uri("/$id"))
+    override fun delete(postId: Long) =
+        http.delete(uri("/$postId"))
+
+    override fun setPicture(postId: Long, request: SetPostPictureRequest): SetPostPictureResponse =
+        http.post(uri("/$postId/picture"), request, SetPostPictureResponse::class.java).body
+
+    override fun resetPicture(postId: Long) {
+        http.delete(uri("/$postId/picture"))
+    }
 
     private fun params(request: SearchPostRequest, includeLimitOffset: Boolean): String {
         val fmt = SimpleDateFormat("yyyy-MM-dd")
