@@ -45,6 +45,7 @@ internal class PostApiImpl(
     private fun params(request: SearchPostRequest, includeLimitOffset: Boolean): String {
         val fmt = SimpleDateFormat("yyyy-MM-dd")
         val buff = mutableListOf<String>()
+        request.userId?.let { buff.add("userId=$it") }
         request.status?.let { buff.add("status=${it.name}") }
         request.storyId?.let { buff.add("storyId=$it") }
         request.scheduledPostStartDateTime.let { buff.add("scheduledPostStartDateTime=" + fmt.format(it)) }
