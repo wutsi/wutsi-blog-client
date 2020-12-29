@@ -15,5 +15,7 @@ data class PostDto(
     val socialPostId: String? = null,
     val scheduledPostDateTime: Date = Date(),
     val postDateTime: Date? = null,
-    val modificationDateTime: Date = Date()
+    val modificationDateTime: Date = Date(),
+    val includeLink: Boolean = true,
+    val language: String? = null
 )

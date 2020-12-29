@@ -9,5 +9,7 @@ data class CreatePostRequest(
     @get:NotNull val storyId: Long? = null,
     @get:NotNull val channelType: ChannelType? = null,
     @get:NotNull @get:Future val scheduledPostDateTime: Date? = null,
-    val message: String? = null
+    val message: String? = null,
+    val includeLink: Boolean = true,
+    val language: String? = null
 )

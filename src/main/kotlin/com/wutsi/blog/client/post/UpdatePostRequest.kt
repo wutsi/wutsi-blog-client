@@ -4,5 +4,7 @@ import java.util.Date
 
 data class UpdatePostRequest(
     val message: String? = null,
-    val scheduledPostDateTime: Date = Date()
+    val scheduledPostDateTime: Date = Date(),
+    val includeLink: Boolean = true,
+    val language: String? = null
 )
