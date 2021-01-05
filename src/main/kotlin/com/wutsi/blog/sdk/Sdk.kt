@@ -9,7 +9,6 @@ import com.wutsi.blog.sdk.impl.NewsletterApiImpl
 import com.wutsi.blog.sdk.impl.PartnerApiImpl
 import com.wutsi.blog.sdk.impl.PinApiImpl
 import com.wutsi.blog.sdk.impl.PostApiImpl
-import com.wutsi.blog.sdk.impl.ShareApiImpl
 import com.wutsi.blog.sdk.impl.TagApiImpl
 import com.wutsi.blog.sdk.impl.TopicApiImpl
 import com.wutsi.blog.sdk.impl.UserApiImpl
@@ -36,8 +35,6 @@ class Sdk(
     fun pinApi(): PinApi = PinApiImpl(http, environment)
 
     fun postApi(): PostApi = PostApiImpl(http, environment)
-
-    fun shareApi(): ShareApi = ShareApiImpl(http, environment)
 
     fun tagApi(): TagApi = TagApiImpl(http, environment)
 
