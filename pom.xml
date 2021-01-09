@@ -6,10 +6,10 @@
 
     <groupId>com.wutsi</groupId>
     <artifactId>wutsi-blog-client</artifactId>
-    <version>1.134.0</version>
+    <version>1.135.0</version>
 
     <properties>
-        <wutsi-editorjs.version>1.16.0</wutsi-editorjs.version>
+        <wutsi-editorjs.version>1.17.0</wutsi-editorjs.version>
         <wutsi-core.version>1.21.0</wutsi-core.version>
 
         <!-- Library versions - in ALPHABETICAL ORDER-->
