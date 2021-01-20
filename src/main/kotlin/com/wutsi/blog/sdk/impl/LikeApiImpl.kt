@@ -34,6 +34,7 @@ internal class LikeApiImpl(
         val fmt = SimpleDateFormat("yyyy-MM-dd")
         val buff = mutableListOf<String>()
         request.userId?.let { buff.add("userId=$it") }
+        request.deviceId?.let { buff.add("deviceId=$it") }
         request.authorId?.let { buff.add("authorId=$it") }
         request.since?.let { buff.add("since=" + fmt.format(it)) }
 
