@@ -25,6 +25,5 @@ data class UserDto(
     var telegramId: String? = null,
     val blog: Boolean = false,
     val storyCount: Long = 0L,
-    val followerCount: Long = 0L,
-    val newsletterDeliveryDayOfWeek: Int = -1
+    val followerCount: Long = 0L
 )
