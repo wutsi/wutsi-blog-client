@@ -5,5 +5,6 @@ enum class ChannelType {
     facebook,
     twitter,
     linkedin,
-    firebase
+    firebase,
+    telegram
 }
