@@ -10,6 +10,7 @@ import com.wutsi.blog.sdk.impl.PartnerApiImpl
 import com.wutsi.blog.sdk.impl.PinApiImpl
 import com.wutsi.blog.sdk.impl.PostApiImpl
 import com.wutsi.blog.sdk.impl.TagApiImpl
+import com.wutsi.blog.sdk.impl.TelegramApiImpl
 import com.wutsi.blog.sdk.impl.TopicApiImpl
 import com.wutsi.blog.sdk.impl.UserApiImpl
 import com.wutsi.core.http.Http
@@ -37,6 +38,8 @@ class Sdk(
     fun postApi(): PostApi = PostApiImpl(http, environment)
 
     fun tagApi(): TagApi = TagApiImpl(http, environment)
+
+    fun telegramApi(): TelegramApi = TelegramApiImpl(http, environment)
 
     fun topicApi(): TopicApi = TopicApiImpl(http, environment)
 
