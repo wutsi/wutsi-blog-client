@@ -26,5 +26,6 @@ data class UserDto(
     val blog: Boolean = false,
     val storyCount: Long = 0L,
     val followerCount: Long = 0L,
-    val lastPublicationDateTime: Date? = null
+    val lastPublicationDateTime: Date? = null,
+    val testUser: Boolean = false
 )
