@@ -1,5 +1,6 @@
 package com.wutsi.blog.client.story
 
+import com.wutsi.blog.client.story.StoryAccess.PUBLIC
 import java.util.Date
 
 data class StorySummaryDto(
@@ -24,5 +25,6 @@ data class StorySummaryDto(
     val wppStatus: WPPStatus? = null,
     val wppRejectionReason: String? = null,
     val wppModificationDateTime: Date? = null,
-    val scheduledPublishDateTime: Date? = null
+    val scheduledPublishDateTime: Date? = null,
+    val access: StoryAccess = PUBLIC
 )

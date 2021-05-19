@@ -1,5 +1,6 @@
 package com.wutsi.blog.client.story
 
+import com.wutsi.blog.client.story.StoryAccess.PUBLIC
 import java.util.Date
 import javax.validation.constraints.Future
 import javax.validation.constraints.NotBlank
@@ -14,5 +15,6 @@ data class PublishStoryRequest(
     val tagline: String? = null,
     val publishToSocialMedia: Boolean? = null,
     val socialMediaMessage: String? = null,
-    @get:Future val scheduledPublishDateTime: Date? = null
+    @get:Future val scheduledPublishDateTime: Date? = null,
+    val access: StoryAccess = PUBLIC
 )

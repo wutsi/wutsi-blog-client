@@ -1,5 +1,6 @@
 package com.wutsi.blog.client.story
 
+import com.wutsi.blog.client.story.StoryAccess.PUBLIC
 import java.util.Date
 
 data class StoryDto(
@@ -31,5 +32,6 @@ data class StoryDto(
     val wppModificationDateTime: Date? = null,
     val socialMediaMessage: String? = null,
     val scheduledPublishDateTime: Date? = null,
-    val publishToSocialMedia: Boolean = false
+    val publishToSocialMedia: Boolean = false,
+    val access: StoryAccess = PUBLIC
 )
