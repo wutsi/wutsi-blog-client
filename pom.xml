@@ -6,10 +6,10 @@
 
     <groupId>com.wutsi</groupId>
     <artifactId>wutsi-blog-client</artifactId>
-    <version>1.154.0</version>
+    <version>1.155.0-SNAPSHOT</version>
 
     <properties>
-        <wutsi-editorjs.version>1.18.0</wutsi-editorjs.version>
+        <wutsi-editorjs.version>1.19.1</wutsi-editorjs.version>
         <wutsi-core.version>1.21.0</wutsi-core.version>
 
         <!-- Library versions - in ALPHABETICAL ORDER-->
@@ -70,6 +70,10 @@
         </dependency>
     </dependencies>
 
+    <scm>
+        <developerConnection>scm:git:https://github.com/wutsi/wutsi-blog-client.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
     <distributionManagement>
         <repository>
             <id>github</id>
