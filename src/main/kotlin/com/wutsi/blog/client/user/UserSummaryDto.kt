@@ -13,5 +13,6 @@ data class UserSummaryDto(
     val modificationDateTime: Date = Date(),
     val storyCount: Long = 0L,
     val followerCount: Long = 0L,
+    val subscriberCount: Long = 0L,
     val testUser: Boolean = false
 )
