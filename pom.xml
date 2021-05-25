@@ -4,7 +4,7 @@
 
     <groupId>com.wutsi</groupId>
     <artifactId>wutsi-blog-client</artifactId>
-    <version>1.155.1-SNAPSHOT</version>
+    <version>1.155.1</version>
 
     <properties>
         <wutsi-editorjs.version>1.19.1</wutsi-editorjs.version>
@@ -70,7 +70,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/wutsi/wutsi-blog-client.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>wutsi-blog-client-1.155.1</tag>
     </scm>
     <distributionManagement>
         <repository>
