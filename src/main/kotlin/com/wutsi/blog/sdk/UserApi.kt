@@ -2,6 +2,8 @@ package com.wutsi.blog.sdk
 
 import com.wutsi.blog.client.user.CountUserResponse
 import com.wutsi.blog.client.user.GetUserResponse
+import com.wutsi.blog.client.user.SaveWalletRequest
+import com.wutsi.blog.client.user.SaveWalletResponse
 import com.wutsi.blog.client.user.SearchUserRequest
 import com.wutsi.blog.client.user.SearchUserResponse
 import com.wutsi.blog.client.user.UpdateUserAttributeRequest
@@ -13,4 +15,5 @@ interface UserApi {
     fun search(request: SearchUserRequest): SearchUserResponse
     fun count(request: SearchUserRequest): CountUserResponse
     fun set(userId: Long, request: UpdateUserAttributeRequest): UpdateUserAttributeResponse
+    fun wallet(userId: Long, request: SaveWalletRequest): SaveWalletResponse
 }

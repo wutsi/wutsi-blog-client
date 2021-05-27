@@ -2,6 +2,8 @@ package com.wutsi.blog.sdk.impl
 
 import com.wutsi.blog.client.user.CountUserResponse
 import com.wutsi.blog.client.user.GetUserResponse
+import com.wutsi.blog.client.user.SaveWalletRequest
+import com.wutsi.blog.client.user.SaveWalletResponse
 import com.wutsi.blog.client.user.SearchUserRequest
 import com.wutsi.blog.client.user.SearchUserResponse
 import com.wutsi.blog.client.user.UpdateUserAttributeRequest
@@ -22,6 +24,9 @@ internal class UserApiImpl(
 
     override fun set(userId: Long, request: UpdateUserAttributeRequest): UpdateUserAttributeResponse =
         http.post(uri("/$userId/attributes"), request, UpdateUserAttributeResponse::class.java).body
+
+    override fun wallet(userId: Long, request: SaveWalletRequest): SaveWalletResponse =
+        http.post(uri("/$userId/wallet"), request, SaveWalletResponse::class.java).body
 
     override fun search(request: SearchUserRequest): SearchUserResponse {
         val url = uri() + "?" + params(request, true)
