@@ -14,5 +14,8 @@ public data class SaveWalletRequest(
     public val mobileProvider: MobileProvider? = null,
 
     @get:NotBlank
-    public val country: String = ""
+    public val country: String = "",
+
+    @get:NotBlank
+    public val fullName: String = ""
 )
