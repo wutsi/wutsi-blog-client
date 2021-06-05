@@ -14,5 +14,6 @@ data class UserSummaryDto(
     val storyCount: Long = 0L,
     val followerCount: Long = 0L,
     val subscriberCount: Long = 0L,
-    val testUser: Boolean = false
+    val testUser: Boolean = false,
+    val email: String? = null
 )
