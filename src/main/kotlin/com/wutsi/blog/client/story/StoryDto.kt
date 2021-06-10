@@ -5,6 +5,7 @@ import java.util.Date
 
 data class StoryDto(
     val id: Long = -1,
+    val siteId: Long = -1,
     val userId: Long = -1,
     val title: String? = null,
     val tagline: String? = null,

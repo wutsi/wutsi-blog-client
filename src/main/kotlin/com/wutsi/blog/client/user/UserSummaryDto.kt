@@ -4,6 +4,7 @@ import java.util.Date
 
 data class UserSummaryDto(
     val id: Long = -1,
+    val siteId: Long = -1,
     val name: String = "",
     val blog: Boolean = false,
     val fullName: String = "",
