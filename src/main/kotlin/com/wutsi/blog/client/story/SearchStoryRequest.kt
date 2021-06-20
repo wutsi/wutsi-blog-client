@@ -2,8 +2,10 @@ package com.wutsi.blog.client.story
 
 import com.wutsi.blog.client.SortOrder
 import java.util.Date
+import javax.validation.constraints.NotNull
 
 data class SearchStoryRequest(
+    @get:NotNull val siteId: Long? = 1L,
     val storyIds: List<Long> = emptyList(),
     val userIds: List<Long> = emptyList(),
     val status: StoryStatus? = null,
