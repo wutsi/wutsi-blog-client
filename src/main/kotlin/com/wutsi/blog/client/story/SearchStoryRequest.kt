@@ -19,5 +19,6 @@ data class SearchStoryRequest(
     val limit: Int = 20,
     val offset: Int = 0,
     val sortBy: StorySortStrategy = StorySortStrategy.modified,
-    val sortOrder: SortOrder = SortOrder.descending
+    val sortOrder: SortOrder = SortOrder.descending,
+    val context: SearchStoryContext = SearchStoryContext()
 )

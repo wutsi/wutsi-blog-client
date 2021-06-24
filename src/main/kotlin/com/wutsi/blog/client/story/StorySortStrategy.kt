@@ -5,4 +5,5 @@ enum class StorySortStrategy {
     created,
     modified,
     published,
+    recommended
 }
