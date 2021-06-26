@@ -1,5 +1,5 @@
 package com.wutsi.blog.client.story
 
 data class RecommendStoryResponse(
-    val storyIds: List<Long> = emptyList()
+    val stories: List<StorySummaryDto> = emptyList()
 )
