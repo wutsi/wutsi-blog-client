@@ -13,10 +13,10 @@
         <!-- Library versions - in ALPHABETICAL ORDER-->
         <javax.validation.version>2.0.1.Final</javax.validation.version>
         <junit.version>4.13.2</junit.version>
-        <klint.version>0.41.0</klint.version>
+        <klint.version>0.46.1</klint.version>
         <kotlin.version>1.7.0</kotlin.version>
-        <slf4j.version>1.7.31</slf4j.version>
-        <spring.version>5.3.8</spring.version>
+        <slf4j.version>1.7.36</slf4j.version>
+        <spring.version>5.3.18</spring.version>
     </properties>
 
     <dependencies>

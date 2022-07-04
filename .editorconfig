@@ -16,3 +16,6 @@ spaces_around_operators = true
 spaces_around_brackets = outside
 spaces_around_operators = false
 wildcard_import_limit = 99
+
+[*.{kt,kts}]
+disabled_rules=trailing-comma,multiline-if-else,annotation,filename,enum-entry-name-case
