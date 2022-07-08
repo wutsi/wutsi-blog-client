@@ -7,7 +7,7 @@
     <version>1.155.16-SNAPSHOT</version>
 
     <properties>
-        <wutsi-editorjs.version>1.19.1</wutsi-editorjs.version>
+        <wutsi-editorjs.version>1.20.1</wutsi-editorjs.version>
         <wutsi-core.version>1.21.0</wutsi-core.version>
 
         <!-- Library versions - in ALPHABETICAL ORDER-->
