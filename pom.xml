@@ -5,7 +5,7 @@
 
     <groupId>com.wutsi</groupId>
     <artifactId>wutsi-blog-client</artifactId>
-    <version>1.155.19-SNAPSHOT</version>
+    <version>1.155.20-SNAPSHOT</version>
 
     <properties>
         <wutsi-editorjs.version>1.20.3</wutsi-editorjs.version>
