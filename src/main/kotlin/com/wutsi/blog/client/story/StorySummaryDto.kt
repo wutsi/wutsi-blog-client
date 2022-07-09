@@ -23,9 +23,16 @@ data class StorySummaryDto(
     val topicId: Long? = null,
     val live: Boolean = false,
     val liveDateTime: Date? = null,
+
+    @Deprecated("WPP no longer supported")
     val wppStatus: WPPStatus? = null,
+
+    @Deprecated("WPP no longer supported")
     val wppRejectionReason: String? = null,
+
+    @Deprecated("WPP no longer supported")
     val wppModificationDateTime: Date? = null,
+
     val scheduledPublishDateTime: Date? = null,
     val access: StoryAccess = PUBLIC
 )

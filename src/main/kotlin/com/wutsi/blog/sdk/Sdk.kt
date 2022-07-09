@@ -2,13 +2,10 @@ package com.wutsi.blog.sdk
 
 import com.wutsi.blog.sdk.impl.ChannelApiImpl
 import com.wutsi.blog.sdk.impl.CommentApiImpl
-import com.wutsi.blog.sdk.impl.ContractApiImpl
 import com.wutsi.blog.sdk.impl.FollowerApiImpl
 import com.wutsi.blog.sdk.impl.LikeApiImpl
 import com.wutsi.blog.sdk.impl.NewsletterApiImpl
-import com.wutsi.blog.sdk.impl.PartnerApiImpl
 import com.wutsi.blog.sdk.impl.PinApiImpl
-import com.wutsi.blog.sdk.impl.PostApiImpl
 import com.wutsi.blog.sdk.impl.TagApiImpl
 import com.wutsi.blog.sdk.impl.TelegramApiImpl
 import com.wutsi.blog.sdk.impl.TopicApiImpl
@@ -23,19 +20,13 @@ class Sdk(
 
     fun commentApi(): CommentApi = CommentApiImpl(http, environment)
 
-    fun contractApi(): ContractApi = ContractApiImpl(http, environment)
-
     fun followerApi(): FollowerApi = FollowerApiImpl(http, environment)
 
     fun likeApi(): LikeApi = LikeApiImpl(http, environment)
 
     fun newsletterApi(): NewsletterApi = NewsletterApiImpl(http, environment)
 
-    fun partnerApi(): PartnerApi = PartnerApiImpl(http, environment)
-
     fun pinApi(): PinApi = PinApiImpl(http, environment)
-
-    fun postApi(): PostApi = PostApiImpl(http, environment)
 
     fun tagApi(): TagApi = TagApiImpl(http, environment)
 
