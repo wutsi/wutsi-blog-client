@@ -7,6 +7,4 @@ data class SortStoryRequest(
     val userId: Long? = null,
     val deviceId: String? = null,
     val algorithm: SortAlgorithmType = SortAlgorithmType.most_recent,
-    val bubbleDownViewedStories: Boolean = true,
-    val statsHoursOffset: Int = 24
 )

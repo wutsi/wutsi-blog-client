@@ -18,7 +18,7 @@ data class SearchStoryRequest(
     val language: String? = null,
     val limit: Int = 20,
     val offset: Int = 0,
-    val sortBy: StorySortStrategy = StorySortStrategy.modified,
+    val sortBy: StorySortStrategy = StorySortStrategy.recommended,
     val sortOrder: SortOrder = SortOrder.descending,
     val context: SearchStoryContext = SearchStoryContext()
 )

@@ -4,5 +4,5 @@ enum class SortAlgorithmType {
     no_sort,
     most_recent,
     most_viewed,
-    preferred_author
+    recommended
 }
