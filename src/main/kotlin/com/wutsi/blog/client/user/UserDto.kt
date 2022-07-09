@@ -30,5 +30,4 @@ data class UserDto(
     val subscriberCount: Long = 0L,
     val lastPublicationDateTime: Date? = null,
     val testUser: Boolean = false,
-    val wallet: WalletDto? = null
 )
