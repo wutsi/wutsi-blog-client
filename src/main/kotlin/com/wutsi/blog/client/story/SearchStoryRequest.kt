@@ -20,5 +20,6 @@ data class SearchStoryRequest(
     val offset: Int = 0,
     val sortBy: StorySortStrategy = StorySortStrategy.recommended,
     val sortOrder: SortOrder = SortOrder.descending,
-    val context: SearchStoryContext = SearchStoryContext()
+    val context: SearchStoryContext = SearchStoryContext(),
+    val dedupUser: Boolean = false
 )
