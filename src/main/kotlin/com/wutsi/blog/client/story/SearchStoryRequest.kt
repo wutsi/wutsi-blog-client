@@ -21,5 +21,6 @@ data class SearchStoryRequest(
     val sortBy: StorySortStrategy = StorySortStrategy.recommended,
     val sortOrder: SortOrder = SortOrder.descending,
     val context: SearchStoryContext = SearchStoryContext(),
-    val dedupUser: Boolean = false
+    val dedupUser: Boolean = false,
+    val tags: List<String> = emptyList()
 )
