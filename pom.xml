@@ -16,7 +16,7 @@
         <klint.version>0.46.1</klint.version>
         <kotlin.version>1.7.0</kotlin.version>
         <slf4j.version>1.7.36</slf4j.version>
-        <spring.version>5.3.18</spring.version>
+        <spring.version>5.3.24</spring.version>
     </properties>
 
     <dependencies>
